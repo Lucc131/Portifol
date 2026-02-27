@@ -4,7 +4,7 @@ Portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
 
 ## Acesse
 - Repositório: https://github.com/Lucc131/Portifol
-- Projeto online: COLE_AQUI_O_LINK_DO_SEU_SITE
+- Projeto online: https://lucc131.github.io/Portifol/
 
 ## Tecnologias
 - HTML5
