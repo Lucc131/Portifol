@@ -3,7 +3,7 @@
 Portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
 
 ## Acesse
-- Repositório: https://github.com/SEU_USUARIO/SEU_REPOSITORIO
+- Repositório: https://github.com/Lucc131/Portifol
 - Projeto online: COLE_AQUI_O_LINK_DO_SEU_SITE
 
 ## Tecnologias
@@ -14,3 +14,4 @@ Portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
 ## Como executar localmente
 1. Clone o repositório.
 2. Abra `html/portfolp.html` no navegador.
+
