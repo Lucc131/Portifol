@@ -527,6 +527,77 @@ footer {
     box-shadow: 0 8px 30px rgba(108, 99, 255, 0.2);
 }
 
+.certificacao h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.certificacao h3 i {
+    color: var(--cor-primaria);
+}
+
+.certificacao-destaque {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top right, rgba(108, 99, 255, 0.2), transparent 45%),
+        linear-gradient(180deg, #1b2b54 0%, var(--cor-card) 100%);
+}
+
+.certificacao-destaque::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #8b86ff 0%, var(--cor-primaria) 100%);
+}
+
+.certificacao-topo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin-bottom: 0.75rem;
+}
+
+.certificacao-periodo {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #fff;
+    background: #6c63ff47;
+    border: 1px solid rgba(167, 139, 250, 0.45);
+    padding: 0.22rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.certificacao-destaque p {
+    color: #f1f3ff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.certificacao-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.85rem;
+    padding: 0.28rem 0.72rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #dbffe8;
+    background: rgba(56, 208, 124, 0.16);
+    border: 1px solid rgba(56, 208, 124, 0.38);
+}
+
+.certificacao-status i {
+    color: #50e391;
+}
 
 .certificacao-img {
     width: 100%;
@@ -549,17 +620,6 @@ footer {
     padding: 1rem;
 }
 
-#certificacoes .certificacao-img {
-    display: block;
-    width: min(100%, 700px);
-    max-height: 340px;
-    height: auto;
-    object-fit: contain;
-    margin: 0.75rem auto 0;
-    padding: 0.25rem;
-    background-color: #ffffff;
-}
-
 @media (max-width: 768px) {
     #certificacoes .certificacao-img {
         max-height: 220px;
@@ -578,6 +638,30 @@ footer {
     }
 }
 
+.certificacoes-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    align-items: start;
+}
+
+.certificacoes-list .certificacao-destaque {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+    .certificacoes-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .certificacao-topo {
+        flex-direction: column;
+        gap: 0.45rem;
+    }
+}
+
 /* Lightbox dos certificados */
 #certificacoes .certificacao-img {
     cursor: zoom-in;
@@ -589,7 +673,7 @@ footer {
     display: none;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.78);
+    background: #000000c7;
     z-index: 1000;
     padding: 1rem;
 }
